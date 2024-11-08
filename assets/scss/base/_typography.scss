@@ -1,0 +1,91 @@
+:root{
+    --fs65: 65px;
+    --fs50: 50px;
+    --fs40: 40px;
+    --fs30: 30px;
+    --fs22: 22px;
+    --fs18: 18px;
+    --fs16: 16px;
+    --p100: 100px;
+    --m50: 50px;
+}
+.fs65{
+    font-size: var(--fs65);
+}
+.fs50{
+    font-size: var(--fs50);
+}
+.fs40{
+    font-size: var(--fs40);
+}
+.fs30{
+    font-size: var(--fs30);
+}
+.fs22{
+    font-size: var(--fs22);
+}
+.fs18{
+    font-size: var(--fs18);
+}
+.fs16{
+    font-size: var(--fs16);
+}
+.py100{
+    padding-top: var(--p100);
+    padding-bottom: var(--p100);
+}
+.pt100{
+    padding-top: var(--p100);
+}
+.pb100{
+    padding-bottom: var(--p100);
+}
+.my50{
+    margin-top: var(--m50);
+    margin-bottom: var(--m50);
+}
+.mt50{
+    margin-top: var(--m50);
+}
+.mb50{
+    margin-bottom: var(--m50);
+}
+h1,h2{
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1680px) {
+    :root{
+        --fs65: 50px;
+        --fs50: 40px;
+        --fs40: 32px;
+        --fs30: 24px;
+        --fs22: 18px;
+        --fs18: 16px;
+        --fs16: 15px;
+        --p100: 80px;
+        --m50: 40px;
+    }
+}
+@media screen and (max-width: 1570px) {
+    :root{
+        --fs65: 45px;
+        --fs40: 30px;
+        --fs22: 17px;
+    }
+}
+@media screen and (max-width: 1370px) {
+    :root{
+        --fs22: 16px;
+        --fs18: 15px;
+        --fs16: 14px;
+        --p100: 60px;
+    }
+}
+@media screen and (max-width: 575px) {
+    :root{
+        --fs65: 36px;
+        --fs50: 32px;
+        --fs30: 18px;
+    }
+}

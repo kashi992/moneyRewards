@@ -1,0 +1,212 @@
+@media screen and (max-width: 1680px) {
+    .customBtn {
+        padding: 18px 30px;
+        border-radius: 10px;
+    }
+
+    .chevron {
+        width: 16px;
+        height: 16px;
+    }
+
+    .heroWrap {
+        height: calc(100vh - 100px);
+    }
+
+    .benefitWrap .benefitBox img {
+        width: 85px;
+    }
+
+    .featureCards .featureCard img {
+        width: 100px;
+    }
+
+    .featureCards .featureCard p {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 1570px) {
+    .heroWrap {
+        height: calc(100vh - 85px);
+    }
+
+}
+
+@media screen and (max-width: 1500px) {
+    .featureCards .featureCard {
+        padding: 40px 24px;
+        gap: 24px;
+    }
+
+    .featureCards .featureCard img {
+        width: 85px;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .testimonailWrap .tesimonialBox .profileIcon{
+        width: 80px;
+        height: 80px;
+    }
+    .customBtn {
+        padding: 14px 20px;
+        border-width: 1px;
+        font-size: 16px;
+    }
+
+    .chevron {
+        width: 13px;
+        height: 13px;
+    }
+
+    .chevron.__left {
+        transform: rotate(45deg) translate(1px, -1px);
+    }
+
+    .chevron.__right {
+        transform: rotate(45deg) translate(-2px, 2px);
+    }
+    .heroWrap {
+        height: calc(100vh - 75px);
+    }
+    .rewardWrap h2 {
+        margin-bottom: 10px;
+    }
+    .featureCards .featureCard h3 {
+        font-size: 40px;
+    }
+    .featureCards .featureCard {
+        padding: 30px 20px;
+        gap: 18px;
+    }
+    .featureCards .featureCard p {
+        font-size: 22px;
+    }
+}
+
+// Ipad pro 
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    .heroWrap .heroInner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .benefitWrap .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .benefitWrap .benefitBox {
+        padding: 40px 16px;
+        border-radius: 16px;
+    }
+}
+
+//  ipad 
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .paymentWrap {
+        width: 100%;
+    }
+    
+    
+    .heroWrap .heroImg {
+        max-height: 500px;
+    }
+    .workWrap .d-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .rewardWrap .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .rewardWrap .rewardBox{
+        margin-left: auto;margin-right: auto;
+    }
+    .testimonailWrap {
+   display: flex;
+   flex-direction: column-reverse;
+        gap: 16px;
+    }
+    .featureCards .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .heroWrap .heroContent p {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .testimonailWrap .testimonialImg img {
+        height: 600px;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+//  mobile 
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .navWrap .navbar-brand img {
+        height: 100%;
+        width: 80px;
+        object-fit: contain;
+    }
+    .heroWrap {
+        padding: 60px 0;
+    }
+    .scrollTop {
+        width: 40px;
+        height: 40px;
+        right: 20px;
+        bottom: 20px;
+    }
+    .customBtn {
+        padding: 12px 15px;
+        font-size: 14px;
+        border-radius: 6px;
+    }
+    .heroWrap .heroInner {
+        gap: 40px;
+    }
+    .heroWrap {
+        height: auto;
+    }
+    .workWrap .d-grid {
+        grid-template-columns: 1fr;
+    }
+    .benefitWrap .container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .rewardWrap .rewardBox .icon-container {
+        width: 85px;
+        height: 85px;
+    }
+    .rewardWrap .rewardBox {
+        border-radius: 16px;
+        padding: 20px;
+        gap: 16px;
+    }
+    .rewardWrap .rewardBox .reward-icon {
+        font-size: 32px;
+    }
+    .testimonailWrap .testimonialContent {
+        padding: 0;
+    }
+    .testimonailWrap {
+        gap: 40px;
+    }
+    .featureCards .featureCard img {
+        width: 70px;
+    }
+    .featureCards .featureCard h3 {
+        font-size: 36px;
+    }
+    .featureCards .featureCard p {
+        font-size: 18px;
+    }
+    .paymentWrap .appIcon img {
+        width: 35px;
+    }
+}
