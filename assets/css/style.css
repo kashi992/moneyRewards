@@ -378,20 +378,9 @@ h1, h2 {
   z-index: 2;
   top: 0;
 }
-.navWrap.scrolled {
-  transition: all 0.6s ease;
-  position: fixed;
-  animation: navTop 1s ease;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  z-index: 3;
-  background-color: #fff;
-}
 .navWrap .navbar {
   padding: 10px 0;
   height: 120px;
-}
-.navWrap .navbar .customBtn {
-  pointer-events: none;
 }
 .navWrap .navbar .navbar-nav {
   gap: 20px;
@@ -438,54 +427,6 @@ h1, h2 {
 }
 .navWrap .navbar-expand-lg .navbar-nav .nav-link.active {
   color: #FA0000;
-}
-.navWrap .hasDrop {
-  position: relative;
-}
-.navWrap .hasDrop .hasDropdown {
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  min-width: 350px;
-  left: 50%;
-  top: 150%;
-  transition: all 0.6s ease;
-  background-color: #fff;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
-  padding: 8px 0;
-  transform: translateX(-50%);
-}
-.navWrap .hasDrop .hasDropdown li {
-  border-bottom: 1px solid #edeff1;
-}
-.navWrap .hasDrop .hasDropdown li:last-child {
-  border-bottom: 0;
-}
-.navWrap .hasDrop .hasDropdown li a {
-  padding: 14px 30px;
-  display: block;
-  color: #000;
-}
-.navWrap .hasDrop .hasDropdown li a i {
-  opacity: 0;
-  transition: all 0.3s ease;
-  width: 0;
-  visibility: hidden;
-  font-size: 16px;
-}
-.navWrap .hasDrop .hasDropdown li a:hover {
-  color: #DFDFDF;
-}
-.navWrap .hasDrop .hasDropdown li a:hover i {
-  opacity: 1;
-  width: 16px;
-  visibility: visible;
-  color: #DFDFDF;
-}
-.navWrap .hasDrop:hover .hasDropdown {
-  opacity: 1;
-  visibility: visible;
-  top: 100%;
 }
 
 @keyframes navTop {
@@ -623,6 +564,11 @@ footer .customBtn.footerBtn {
 .heroWrap .codeForm {
   margin-left: 0;
   margin-right: 0;
+}
+.heroWrap .heroLogo {
+  max-width: 400px;
+  width: 100%;
+  margin-top: 40px;
 }
 .heroWrap .container {
   height: 100%;
@@ -900,7 +846,7 @@ footer .customBtn.footerBtn {
 .testimonailWrap {
   display: grid;
   align-items: center;
-  grid-template-columns: 420px 1fr;
+  grid-template-columns: 520px 1fr;
 }
 .testimonailWrap .rating {
   font-size: 40px;
@@ -913,6 +859,7 @@ footer .customBtn.footerBtn {
 .testimonailWrap .testimonialImg img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 .testimonailWrap h2 {
   font-size: var(--fs50);
@@ -1283,6 +1230,12 @@ footer .customBtn.footerBtn {
   }
 }
 @media screen and (max-width: 1370px) {
+  .testimonailWrap {
+    grid-template-columns: 400px 1fr;
+  }
+  .heroWrap .heroLogo {
+    max-width: 310px;
+  }
   .testimonailWrap .tesimonialBox .profileIcon {
     width: 80px;
     height: 80px;
@@ -1365,7 +1318,6 @@ footer .customBtn.footerBtn {
     margin-bottom: 30px;
   }
   .testimonailWrap .testimonialImg img {
-    height: 600px;
     width: 100%;
     object-fit: contain;
   }
@@ -1373,7 +1325,6 @@ footer .customBtn.footerBtn {
 @media (max-width: 575.98px) {
   .navWrap .navbar-brand img {
     height: 100%;
-    width: 80px;
     object-fit: contain;
   }
   .heroWrap {

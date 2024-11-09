@@ -98,9 +98,18 @@
     height: calc(100vh - 120px);
     background: linear-gradient(135deg, #fff, #f3b0b2);
     padding: 40px 0;
-.codeForm{
-    margin-left: 0;margin-right: 0;
-}
+
+    .codeForm {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .heroLogo {
+        max-width: 400px;
+        width: 100%;
+        margin-top: 40px;
+    }
+
     .container {
         height: 100%;
     }
@@ -206,10 +215,11 @@
         gap: 20px;
         color: $whiteColor;
         align-items: center;
-    width: fit-content;
-    p{
-        font-size: var(--fs30);
-    }
+        width: fit-content;
+
+        p {
+            font-size: var(--fs30);
+        }
     }
 }
 
@@ -449,7 +459,7 @@
 .testimonailWrap {
     display: grid;
     align-items: center;
-    grid-template-columns: 420px 1fr;
+    grid-template-columns: 520px 1fr;
 
     .rating {
         font-size: 40px;
@@ -463,6 +473,7 @@
         img {
             height: 100%;
             width: 100%;
+            object-fit: cover;
         }
     }
 
@@ -623,10 +634,13 @@
     width: 100%;
     margin-top: 30px;
     display: none;
-    margin-left: auto;margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+
     .formGroup {
         display: flex;
         gap: 16px;
+
         .form-control {
             height: 50px;
             background-color: unset;
@@ -634,7 +648,8 @@
             color: $primaryColor;
         }
     }
-    .customBtn{
+
+    .customBtn {
         background-color: $primaryColor;
         border-color: $primaryColor;
     }

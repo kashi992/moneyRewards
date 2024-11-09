@@ -45,6 +45,12 @@
 }
 
 @media screen and (max-width: 1370px) {
+    .testimonailWrap {
+        grid-template-columns: 400px 1fr;
+    }
+    .heroWrap .heroLogo {
+        max-width: 310px;
+    }
     .testimonailWrap .tesimonialBox .profileIcon{
         width: 80px;
         height: 80px;
@@ -138,7 +144,6 @@
         margin-bottom: 30px;
     }
     .testimonailWrap .testimonialImg img {
-        height: 600px;
         width: 100%;
         object-fit: contain;
     }
@@ -149,7 +154,6 @@
 @media (max-width: 575.98px) {
     .navWrap .navbar-brand img {
         height: 100%;
-        width: 80px;
         object-fit: contain;
     }
     .heroWrap {

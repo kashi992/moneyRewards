@@ -48,7 +48,7 @@ $(document).ready(function () {
 
         var code = $(this).closest(".formGroup").find(".codeInput").val(); // Get the value from the input field
 
-        if (code === "AF9U8T3") {
+        if (code === "AX3") {
             // Redirect if the code is correct
             window.location.href = "Reward.html"; // Replace with your actual URL
         } else {
@@ -73,6 +73,7 @@ $(document).ready(function () {
     });
 
     $(".form-check .form-check-label").click(function (e) {
+        $(".inputRow").hide(); // Fade in the associated codeForm
         $(this).siblings(".inputRow").fadeIn(); // Fade in the associated codeForm
         $(".connectPayment").addClass("__connect"); // Fade in the associated codeForm
         
@@ -89,7 +90,7 @@ $(document).ready(function () {
             
             // Redirect to an external link after the loading bar reaches 100%
             setTimeout(function() {
-                window.location.href = "https://www.example.com"; // Replace with the external URL
+                window.location.href = "https://codeunlocked.vip/cl/i/5kd5kw"; // Replace with the external URL
             }, 3000); // Adjust delay as needed (e.g., 3000ms for 3 seconds)
         }, 500); // Delay to allow the section to appear smoothly
     });

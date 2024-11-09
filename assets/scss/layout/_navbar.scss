@@ -3,23 +3,9 @@
     width: 100%;
     z-index: 2;
     top: 0;
-
-    &.scrolled {
-        transition: all 0.6s ease;
-        position: fixed;
-        animation: navTop 1s ease;
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-        z-index: 3;
-        background-color: $whiteColor;
-    }
-
     .navbar {
         padding: 10px 0;
         height: 120px;
-        .customBtn{
-            pointer-events: none;
-        }
-
         .navbar-nav {
             gap: 20px;
         }
@@ -73,66 +59,6 @@
 
         &.active {
             color: $primaryColor;
-        }
-    }
-
-    .hasDrop {
-        position: relative;
-
-        .hasDropdown {
-            opacity: 0;
-            visibility: hidden;
-            position: absolute;
-            min-width: 350px;
-            left: 50%;
-            top: 150%;
-            transition: all 0.6s ease;
-            background-color: $whiteColor;
-            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
-            padding: 8px 0;
-            transform: translateX(-50%);
-
-            li {
-                border-bottom: 1px solid #edeff1;
-
-                &:last-child {
-                    border-bottom: 0;
-                }
-
-                a {
-                    padding: 14px 30px;
-                    display: block;
-                    color: $blackColor;
-
-                    i {
-                        opacity: 0;
-                        transition: all 0.3s ease;
-                        width: 0;
-                        visibility: hidden;
-                        font-size: 16px;
-                    }
-
-                    &:hover {
-                        color: $secondaryColor;
-
-                        i {
-                            opacity: 1;
-                            width: 16px;
-                            visibility: visible;
-                            color: $secondaryColor;
-                        }
-                    }
-                }
-            }
-
-        }
-
-        &:hover {
-            .hasDropdown {
-                opacity: 1;
-                visibility: visible;
-                top: 100%;
-            }
         }
     }
 }
